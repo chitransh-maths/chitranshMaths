@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chitransh Maths</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Password Page -->
+  <div id="passwordPage">
+    <div class="header">
+      <img src="logo.png" alt="Logo" class="logo">
+      <h1>Chitransh Maths</h1>
+    </div>
+
+    <div class="password-container">
+      <h2>Enter Password</h2>
+      <input type="password" id="passwordInput" placeholder="Enter Password">
+      <button onclick="checkPassword()">Proceed</button>
+      <p id="passwordError" class="error"></p>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div id="mainContent" style="display: none;">
+
+    <header>
+      <img src="logo.png" alt="Chitransh Maths Logo" class="logo">
+      <h1>Chitransh Maths</h1>
+    </header>
+
+    <div id="start-section" style="text-align: center; margin: 2rem;">
+      <div class="controls">
+        <select id="level-select">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+
+        <select id="topic-select">
+          <option value="addition">Addition</option>
+          <option value="subtraction">Subtraction</option>
+          <option value="multiplication">Multiplication</option>
+          <option value="division">Division</option>
+        </select>
+      </div>
+      <button id="start-btn">Start Quiz</button>
+    </div>
+
+    <div id="flash"></div>
+    <div id="timer"></div>
+
+    <main id="quiz-container" style="display: none;">
+      <div id="question-box">
+        <h2 id="question-number"></h2>
+        <p id="question-text"></p>
+        <input type="number" id="answer" placeholder="Enter your answer">
+        <div class="buttons">
+          <button id="submit-btn">Submit</button>
+          <button id="skip-btn">Skip</button>
+          <button id="next-btn" style="display: none;">Next Question</button>
+        </div>
+      </div>
+    </main>
+
+    <div id="progress-section" style="display: none;">
+      <p id="progress"></p>
+      <button id="share-btn">Share Progress</button>
+    </div>
+
+    <canvas id="certificate-canvas" style="display: none;"></canvas>
+    <a id="download-link" download="certificate.png" style="display: none;">Download Certificate</a>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

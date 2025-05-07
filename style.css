@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  color: #333;
+}
+
+header {
+  background-color: #004080;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 10px;
+}
+
+#start-section {
+  text-align: center;
+  margin: 2rem;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+select {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+#start-btn {
+  background-color: #007bff;
+  color: white;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#start-btn:hover {
+  background-color: #0056b3;
+}
+
+#flash {
+  margin: 1rem auto;
+  padding: 1rem;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeeba;
+  border-radius: 8px;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+#timer {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+#quiz-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+
+#question-box {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+}
+
+#answer {
+  width: 80%;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  font-size: 1rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+button {
+  margin: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#submit-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+#skip-btn {
+  background-color: #ffc107;
+  color: black;
+}
+
+#next-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+#progress-section {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#certificate-canvas {
+  display: block;
+  margin: 2rem auto;
+  border: 2px solid #333;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+#download-link {
+  display: block;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  color: #007bff;
+}
