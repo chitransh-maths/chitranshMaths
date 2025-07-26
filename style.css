@@ -146,3 +146,88 @@ button {
   font-weight: bold;
   color: #007bff;
 }
+/* style.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #121212;
+  color: #ffffff;
+}
+
+#passwordPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(135deg, #1f1f1f, #2b2b2b);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #00ffcc;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #00ffcc;
+  text-shadow: 1px 1px 4px #000;
+}
+
+.password-container {
+  background: #1e1e1e;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 255, 204, 0.3);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.password-container h2 {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+
+.password-container input[type="password"] {
+  padding: 0.6rem;
+  width: 100%;
+  border: 1px solid #444;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #2a2a2a;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.password-container button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background-color: #00ffcc;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.password-container button:hover {
+  background-color: #00ccaa;
+}
+
+.error {
+  color: #ff5555;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
